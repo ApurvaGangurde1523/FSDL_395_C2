@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="scroll-smooth dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apurva Mahesh Gangurde | Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;family=JetBrains+Mono&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B5CF6",
+                        secondary: "#3B82F6",
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#0A0F1C",
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        sans: ["Poppins", "sans-serif"],
+                        mono: ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        "xl": "1.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        body {
+            @apply text-[16px];
+        }
+        h1 { @apply text-7xl md:text-9xl; }
+        h2 { @apply text-5xl; }
+        h3 { @apply text-2xl; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+            border-radius: 1.5rem;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: translateY(-4px);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #C084FC, #60A5FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            background: radial-gradient(circle at center, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+        }
+        .line-height-fix {
+            line-height: 1.2;
+            padding-bottom: 0.1em;
+        }
+        .nav-link {
+            @apply hover:text-primary transition-colors text-base font-medium;
+        }
+        .btn-rounded {
+            @apply rounded-[1.5rem];
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-sans selection:bg-primary selection:text-white overflow-x-hidden">
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+<div class="hidden md:flex items-center space-x-10">
+<a class="nav-link" href="#about">About</a>
+<a class="nav-link" href="#education">Education</a>
+<a class="nav-link" href="#skills">Skills</a>
+<a class="nav-link" href="#projects">Projects</a>
+<a class="nav-link" href="#certifications">Certifications</a>
+<a class="nav-link" href="#activities">Activities</a>
+<a class="nav-link" href="#contact">Contact</a>
+</div>
+<div class="flex items-center space-x-6 ml-auto">
+<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-2xl">dark_mode</span>
+</button>
+<a class="px-7 py-2.5 bg-secondary text-white btn-rounded font-bold text-sm hover:bg-blue-600 transition-all shadow-lg shadow-blue-500/20" href="https://drive.google.com/file/d/1LWCSxZ150bHDiXUuvyRYsTvqFl52FBSR/view?usp=drive_link">RESUME</a>
+</div>
+</nav>
+</header>
+<main class="relative">
+<section class="relative min-h-[85vh] flex flex-col items-center justify-center pt-24 px-6 overflow-hidden">
+<div class="absolute inset-0 hero-glow -z-10"></div>
+<div class="text-center max-w-5xl mx-auto space-y-10">
+<p class="uppercase tracking-[0.4em] text-sm font-bold text-slate-500 dark:text-slate-400">Welcome to my space</p>
+<h1 class="font-display gradient-text line-height-fix leading-tight">
+                Apurva Mahesh Gangurde
+            </h1>
+<p class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">
+                Aspiring Computer Science Engineer | AI &amp; Software Development Enthusiast
+            </p>
+</div>
+</section>
+<section class="pb-32 pt-32 px-6 container mx-auto mt-32" id="about">
+<div class="flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto">
+<div class="relative w-full md:w-1/3">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary to-secondary opacity-20 blur-2xl transition-opacity"></div>
+<img
+  src="Prof_Photo.jpg"
+  alt="Apurva Mahesh Gangurde"
+  class="relative z-10 w-72 h-96 object-cover rounded-xl shadow-2xl mx-auto border-2 border-slate-700/50"
+/>
+</div>
+<div class="w-full md:w-2/3 space-y-6 md:pl-4">
+<h2 class="font-display border-l-4 border-primary pl-6 mb-2">About Me</h2>
+<div class="pl-12">
+<p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+                        Computer Science Student with a Strong Foundation in Programming, Algorithms, and Data Structures. Seeking opportunities to apply technical skills in real-world projects across diverse domains. Highly passionate about Artificial Intelligence and software development, with proficiency in C, C++, Python, Java, and Data Structures. Proficient in software development with a strong aptitude for problem-solving through code. Actively engaged in continuous learning through online courses, coding workshops, and hackathons. Motivated to contribute, innovate, and grow within a dynamic and collaborative technical environment. Driven by continuous improvement and eager to take on challenging roles that foster technical growth and meaningful impact.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-slate-100/30 dark:bg-slate-900/30" id="education">
+<div class="container mx-auto px-6">
+<h2 class="font-display text-center mb-20">Education</h2>
+<div class="glass-card p-10 flex flex-col md:flex-row md:items-center justify-between gap-8 max-w-5xl mx-auto group">
+<div>
+<h3 class="font-bold">B.Tech in Computer Science</h3>
+<p class="text-primary font-semibold mt-2 uppercase text-base tracking-wider">MIT World Peace University, Pune, Maharashtra</p>
+</div>
+<div class="px-6 py-2 bg-slate-200 dark:bg-slate-800 rounded-full text-sm font-bold tracking-widest">
+                    2023 - 2027
+                </div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 container mx-auto" id="skills">
+<h2 class="font-display text-center mb-20">Technical Skills</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glass-card p-8 space-y-5">
+<span class="material-symbols-outlined text-primary text-4xl">terminal</span>
+<h3 class="font-bold">Programming Languages</h3>
+<p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">C, C++, DSA, Python, Java, Assembly Language (x86)</p>
+</div>
+<div class="glass-card p-8 space-y-5">
+<span class="material-symbols-outlined text-primary text-4xl">public</span>
+<h3 class="font-bold">Web Development</h3>
+<p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">React.js, HTML, CSS, UI/UX, Node.js, Express.js, MySQL, PostgreSQL, MongoDB</p>
+</div>
+<div class="glass-card p-8 space-y-5">
+<span class="material-symbols-outlined text-primary text-4xl">cloud</span>
+<h3 class="font-bold">Cloud &amp; DevOps</h3>
+<p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">AWS Cloud Computing, Google Cloud</p>
+</div>
+<div class="glass-card p-8 space-y-5">
+<span class="material-symbols-outlined text-primary text-4xl">psychology</span>
+<h3 class="font-bold">Artificial Intelligence</h3>
+<p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">Machine Learning &amp; Deep Learning Model Training, NLP</p>
+</div>
+<div class="glass-card p-8 space-y-5">
+<span class="material-symbols-outlined text-primary text-4xl">view_kanban</span>
+<h3 class="font-bold">Methodologies</h3>
+<p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">Agile &amp; Scrum Development</p>
+</div>
+<div class="glass-card p-8 space-y-5">
+<span class="material-symbols-outlined text-primary text-4xl">build</span>
+<h3 class="font-bold">Tools &amp; Technologies</h3>
+<p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">Tableau, AutoCAD, Figma, VS Code, Git</p>
+</div>
+</div>
+<div class="mt-20 text-center">
+<p class="text-sm uppercase tracking-[0.5em] font-bold text-slate-500">Core Competencies: Problem-Solving, Critical Thinking, Teamwork</p>
+</div>
+</section>
+<section class="py-32 bg-slate-100/30 dark:bg-slate-900/30 px-6" id="projects">
+<div class="container mx-auto">
+<div class="text-center mb-20 space-y-6">
+<h2 class="font-display">Projects</h2>
+<p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-lg">A collection of academic and personal works focusing on AI and full-stack development.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glass-card p-10 group">
+<h3 class="font-bold mb-4 group-hover:text-primary transition-colors">Minesweeper Game Development</h3>
+<p class="text-base text-slate-500 dark:text-slate-400 leading-relaxed">Developed using C++ to enhance problem-solving skills; implemented game logic including grid generation, bomb placement, and win/loss conditions.</p>
+</div>
+<div class="glass-card p-10 group">
+<h3 class="font-bold mb-4 group-hover:text-primary transition-colors">Electronic Voting Machine (EVM)</h3>
+<p class="text-base text-slate-500 dark:text-slate-400 leading-relaxed">Designed a digital voting system using the 8051 microcontroller to conduct student elections; records votes and displays results.</p>
+</div>
+<div class="glass-card p-10 group">
+<h3 class="font-bold mb-4 group-hover:text-primary transition-colors">Object Recognition (Python &amp; CNN)</h3>
+<p class="text-base text-slate-500 dark:text-slate-400 leading-relaxed">Implemented a model using CNN in Python to identify and recognize various objects in real-time from images.</p>
+</div>
+<div class="glass-card p-10 group">
+<h3 class="font-bold mb-4 group-hover:text-primary transition-colors">Text Classification (TensorFlow)</h3>
+<p class="text-base text-slate-500 dark:text-slate-400 leading-relaxed">A TensorFlow-based model to classify movie reviews into positive or negative sentiments with strong accuracy.</p>
+</div>
+<div class="glass-card p-10 group">
+<h3 class="font-bold mb-4 group-hover:text-primary transition-colors">Crime Reporting System</h3>
+<p class="text-base text-slate-500 dark:text-slate-400 leading-relaxed">User-friendly web application for citizens to register and report crimes, with data securely stored using MySQL.</p>
+</div>
+<div class="glass-card p-10 group">
+<h3 class="font-bold mb-4 group-hover:text-primary transition-colors">Automatic Plant Watering System</h3>
+<p class="text-base text-slate-500 dark:text-slate-400 leading-relaxed">IoT-based system using Arduino Uno, soil sensors, and relay modules to automate irrigation and reduce water wastage.</p>
+</div>
+<div class="glass-card p-10 group">
+<h3 class="font-bold mb-4 group-hover:text-primary transition-colors">LandCover Mapping</h3>
+<p class="text-base text-slate-500 dark:text-slate-400 leading-relaxed">Deep-learning based system for land-cover mapping and drought prediction from satellite data, deployed via Streamlit.</p>
+</div>
+<div class="glass-card p-10 group">
+<h3 class="font-bold mb-4 group-hover:text-primary transition-colors">Advanced Scientific Calculator</h3>
+<p class="text-base text-slate-500 dark:text-slate-400 leading-relaxed">Built a feature-rich calculator with scientific functions, bracket support, calculation history, and responsive design using HTML, CSS, and JavaScript.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 container mx-auto" id="certifications">
+<h2 class="font-display text-center mb-20">Certifications</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">Artificial Intelligence Foundation</h4>
+<p class="text-sm text-slate-400">Infosys Springboard</p>
+</div>
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">Software Engineering &amp; Agile</h4>
+<p class="text-sm text-slate-400">Infosys Springboard</p>
+</div>
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">Introduction to Robotic Process Automation</h4>
+<p class="text-sm text-slate-400">Infosys Springboard</p>
+</div>
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">Data Science</h4>
+<p class="text-sm text-slate-400">Infosys Springboard</p>
+</div>
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">Natural Language Processing</h4>
+<p class="text-sm text-slate-400">Infosys Springboard</p>
+</div>
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">Design Thinking</h4>
+<p class="text-sm text-slate-400">Infosys Springboard</p>
+</div>
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">Basics of Python</h4>
+<p class="text-sm text-slate-400">Infosys Springboard</p>
+</div>
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">Computer Vision</h4>
+<p class="text-sm text-slate-400">Infosys Springboard</p>
+</div>
+<div class="glass-card p-8 flex flex-col items-start min-h-[160px]">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" style="font-variation-settings: 'FILL' 1">verified</span>
+<h4 class="font-bold text-xl text-slate-100 mb-1">AWS Skill Builder Program</h4>
+<p class="text-sm text-slate-400">Amazon Web Services</p>
+</div>
+</div>
+</section>
+<section class="py-32 bg-slate-100/30 dark:bg-slate-900/30 px-6" id="activities">
+<div class="container mx-auto">
+<h2 class="font-display text-center mb-20">Activities</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="glass-card p-8 flex flex-col items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">groups</span>
+<div>
+<h4 class="font-bold text-xl">CoDec Technical Team</h4>
+<p class="text-sm text-slate-500 mt-2 leading-relaxed">Active member of the technical team at CoDec.</p>
+</div>
+</div>
+<div class="glass-card p-8 flex flex-col items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">emoji_events</span>
+<div>
+<h4 class="font-bold text-xl">Smart India Hackathon</h4>
+<p class="text-sm text-slate-500 mt-2 leading-relaxed">Participant in the national level SIH competition.</p>
+</div>
+</div>
+<div class="glass-card p-8 flex flex-col items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">sports_esports</span>
+<div>
+<h4 class="font-bold text-xl">Google Arcade</h4>
+<p class="text-sm text-slate-500 mt-2 leading-relaxed">Engaged in the Google Arcade program for cloud skills.</p>
+</div>
+</div>
+<div class="glass-card p-8 flex flex-col items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">terminal</span>
+<div>
+<h4 class="font-bold text-xl">Hackathons Participant</h4>
+<p class="text-sm text-slate-500 mt-2 leading-relaxed">Participated in SPIT Hackathon, SIH, and CreaTech Hackathons.</p>
+</div>
+</div>
+<div class="glass-card p-8 flex flex-col items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">award_star</span>
+<div>
+<h4 class="font-bold text-xl">Pragati Cohort 4</h4>
+<p class="text-sm text-slate-500 mt-2 leading-relaxed">Selected participant in the Infosys Springboard Pragati program.</p>
+</div>
+</div>
+<div class="glass-card p-8 flex flex-col items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">cloud_done</span>
+<div>
+<h4 class="font-bold text-xl">AWS Skill Builder Program</h4>
+<p class="text-sm text-slate-500 mt-2 leading-relaxed">Actively pursuing advanced cloud certifications and hands-on laboratory exercises.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 container mx-auto text-center" id="contact">
+<h2 class="font-display mb-6">Let's Connect</h2>
+<p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto mb-16 text-xl font-light italic">
+            I am currently seeking opportunities to collaborate on innovative AI and software projects. I invite you to reach out for professional discussions or potential collaborations.
+        </p>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="px-10 py-4 bg-secondary text-white btn-rounded font-bold flex items-center gap-3 hover:bg-blue-600 transition-all text-lg shadow-xl shadow-blue-500/10" href="mailto:apurvagangurde75@gmail.com">
+<span class="material-symbols-outlined text-2xl">mail</span> Email Me
+            </a>
+<a class="px-10 py-4 glass-card text-slate-800 dark:text-white btn-rounded font-bold flex items-center gap-3 hover:border-primary transition-all text-lg" href="https://github.com/ApurvaGangurde1523" target="_blank">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg> GitHub
+            </a>
+<a class="px-10 py-4 glass-card text-slate-800 dark:text-white btn-rounded font-bold flex items-center gap-3 hover:border-primary transition-all text-lg" href="www.linkedin.com/in/apurva-gangurde-599192334" target="_blank">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg> LinkedIn
+            </a>
+</div>
+</section>
+</main>
+<footer class="py-16 px-6 border-t border-slate-200/10 dark:bg-slate-950">
+<div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+<p class="text-sm font-bold tracking-[0.2em] text-slate-500 uppercase">© 2026 Apurva Mahesh Gangurde.</p>
+</div>
+</footer>
+<script>
+    // Dark mode toggle functionality
+    const darkModeToggle = document.querySelector('button .material-symbols-outlined');
+    const htmlElement = document.documentElement;
+    
+    // Check for saved theme preference or default to dark mode
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    htmlElement.classList.toggle('dark', currentTheme === 'dark');
+    updateIcon(currentTheme);
+    
+    // Toggle dark mode on button click
+    darkModeToggle.parentElement.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+        const newTheme = htmlElement.classList.contains('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+    
+    // Update icon based on theme
+    function updateIcon(theme) {
+        if (theme === 'dark') {
+            darkModeToggle.textContent = 'light_mode';
+        } else {
+            darkModeToggle.textContent = 'dark_mode';
+        }
+    }
+</script>
+</body></html>
