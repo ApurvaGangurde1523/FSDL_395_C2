@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation Lab</title>
+  <link rel="stylesheet" href="dom-style.css">
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <div class="lab-container">
+
+    <!-- LEFT IMAGE SECTION -->
+    <div class="image-section">
+      <img id="dynamicImage" src="images/img1.png" />
+      <div class="image-overlay">
+        <h1>Interactive DOM Lab</h1>
+        <p>Experiment. Learn. Visualize.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT OPERATIONS -->
+    <div class="operations-section">
+
+      <h2>DOM Operations</h2>
+
+      <!-- QUOTE SECTION (NOW INSIDE RIGHT SIDE) -->
+      <div class="quote-section">
+        <p id="quoteText">
+          “The best way to predict the future is to create it.”
+        </p>
+      </div>
+
+      <!-- CHANGE QUOTE TEXT -->
+      <div class="operation">
+        <input type="text" id="quoteInput" placeholder="Enter new quote">
+        <button onclick="changeQuoteText()">Change Quote</button>
+      </div>
+
+      <!-- CHANGE QUOTE FONT -->
+      <div class="operation">
+        <select id="fontSelector" onchange="changeQuoteFont()">
+          <option value="Georgia">Georgia</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Tahoma">Tahoma</option>
+          <option value="Trebuchet MS">Trebuchet MS</option>
+          <option value="Impact">Impact</option>
+        </select>
+      </div>
+
+      <!-- CHANGE QUOTE COLOR -->
+<div class="operation">
+  <label style="font-size:18px;">Choose Quote Color:</label>
+  <input type="color" id="quoteColorPicker">
+  <button onclick="changeQuoteColor()">Apply Color</button>
+</div>
+
+
+      <!-- IMAGE CHANGE -->
+      <div class="operation">
+        <button onclick="changeImageManual()">Change Image</button>
+      </div>
+
+      <!-- NODE OPERATIONS -->
+      <div class="operation">
+        <input type="text" id="addInput" placeholder="Enter text to add node">
+        <button onclick="addNode()">Add Node</button>
+      </div>
+
+      <div class="operation">
+        <button onclick="deleteNode()">Delete Node</button>
+      </div>
+
+      <div class="operation">
+        <button onclick="changeColor()">Change Node Color</button>
+      </div>
+
+      <div class="operation">
+        <button onclick="clearAll()">Clear All Nodes</button>
+      </div>
+
+      <div id="outputArea"></div>
+
+    </div>
+
+  </div>
+
+  <script src="dom-script.js"></script>
+</body>
+</html>

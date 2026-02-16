@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Successful</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+<canvas id="particles"></canvas>
+
+<div class="success-box">
+    <h2>Welcome 🚀</h2>
+    <p>You have successfully signed in.</p>
+    <br>
+    <button onclick="location.href='dom.html'">Go to DOM Lab</button>
+</div>
+<script>
+window.onload = function(){
+
+    var duration = 3000;
+    var end = Date.now() + duration;
+
+    (function frame() {
+        confetti({
+            particleCount: 8,
+            angle: 60,
+            spread: 70,
+            origin: { x: 0 }
+        });
+
+        confetti({
+            particleCount: 8,
+            angle: 120,
+            spread: 70,
+            origin: { x: 1 }
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    })();
+
+};
+</script>
+
+</body>
+</html>
